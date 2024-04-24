@@ -4,7 +4,7 @@ import requests
 def index(request):
   r1 = requests.get('https://api.github.com/events')
   data = r1.json()
-  events = data[0]['repo']
+  events = data[1]['repo']
 
   r2 = requests.get('https://www.boredapi.com/api/activity')
   data = r2.json()
@@ -14,4 +14,6 @@ def index(request):
   res3 = r3.json()
   dog = res3['message']
 
-  return render(request, 'templates/index.html', {'events': events, 'activity': activity, 'dog': dog})
+ 
+
+  return render(request, 'templates/index.html', {'events': events, 'activity': activity, 'dog': dog,})

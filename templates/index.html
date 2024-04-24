@@ -18,55 +18,198 @@
     />
   </head>
   <body>
-    <nav style="margin-left:30px; margin-right:30px;" class="navbar navbar-expand-lg navbar-light bg-light">
-      <h1><a class="navbar-brand" href="#">The Random<span style='color:red;'>Master</span></a></h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria- expanded="false">
-              Dropdown
+    <nav class="navbar navbar-expand-lg  fixed-top shadow border-bottom text-white" style="background-color: black; color: white;">
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" target="_blank" href="#">
+               <h1 style="color:white;">Random<span style="color:red;">Master</span></h1>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <button style="color: white;" class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                </button>
+            <div class="collapse navbar-collapse text-white" id="navbarExample01">
+                
+
+                <ul class="navbar-nav  navbar-nav me-auto mb-2 mb-lg-0" id="topNav">
+                    
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" aria-current="page" href="{#}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" aria-current="page" href="#">Help</a>
+                    </li>
+
+                   
+                    
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="" rel="nofollow" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+              <div style="margin-left:20px" class="-flex flex-rowd"  style="color: white;">
+                  <form class="form-inline my-2 my-lg-0 d-flex">
+                    <input style="" class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button style="margin-left:30px; color:white;" class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 13a6.47 6.47 0 0 0 3.845-1.258h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1A6.47 6.47 0 0 0 13 6.5 6.5 6.5 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13m0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                    </svg></i></button>
+                  </form>
+              </div>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+        </div>
     </nav>
     
-    <div class="main" role="main">
-      <h1>Welcome to Random Facts and Images</h1>
-      <!-- <h1>Random Events</h1>
-      <p> {{events}}</p> -->
+    <main role="main" style="margin:70px 70px; padding:80px;"  id="main">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Let's get some roundom thought's 💭 </h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button class="btn btn-sm btn-outline-secondary">Share</button>
+            <button class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            This week
+          </button>
+        </div>
+      </div>
 
-      <h1>Are You Bored?</h1>
-      <p> {{activity}}</p>
+      <h2>My Randoms</h2>
+      <div class="container flex" style="display:flex;justify-content:space-between; align-content:center; ">
+        <div class="card text-white bg-primary mb-3" style="width: 100%;margin:2px;">
+          <div class="card-header">Are You Bored?</div>
+          <div class="card-body">
+            <h5 class="card-title">what to do</h5>
+            <p class="card-text">{{activity}}</p>
+          </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3" style="width: 100%;margin:2px;">
+          <div class="card-header">Feeling low</div>
+          <div class="card-body">
+            <h5 class="card-title">some qoute for you</h5>
+            <p class="card-text">{{events}}</p>
+          </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="width: 100%;margin:2px;">
+          <div class="card-header">Bible Verses</div>
+          <div class="card-body">
+            <h5 class="card-title">some roundme bible verse for you</h5>
+            <p class="card-text">{{activity}}</p>
+          </div>
+        </div>
+        <div class="card text-white bg-danger mb-3" style="width: 100%; margin:2px;">
+            <div class="card-header">Bible Verses</div>
+            <div class="card-body">
+              <h5 class="card-title">some roundme bible verse for you</h5>
+              <p class="card-text">{{activity}}</p>
+          </div>
+        </div>
 
 
-      <h1>Random Dog Breeds?</h1>
-      <img src="{{ dog }}" alt="Random Dog Image">
-    </div>
+      </div>
 
+      <div class="card-group">
+        <div class="card" style="margin:2px;">
+          <img class="card-img-top" src="{{ dog }}" alt="Random Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Random Dog Breeds?</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card" style="margin:2px;">
+          <img class="card-img-top" src="{{ dog }}" alt="Random Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Random Dog Breeds?</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card" style="margin:2px;">
+          <img class="card-img-top" src="{{ dog }}" alt="Random Dog Image">
+          <div class="card-body">
+            <h5 class="card-title">Random Dog Breeds?</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+       <section>
+         <div class="card-columns">
+           <div class="card">
+             <img class="card-img-top" src="..." alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Card title that wraps to a new line</h5>
+               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             </div>
+           </div>
+           <div class="card p-3">
+             <blockquote class="blockquote mb-0 card-body">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+               <footer class="blockquote-footer">
+                 <small class="text-muted">
+                   Someone famous in <cite title="Source Title">Source Title</cite>
+                 </small>
+               </footer>
+             </blockquote>
+           </div>
+           <div class="card">
+             <img class="card-img-top" src="..." alt="Card image cap">
+             <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+             </div>
+           </div>
+           <div class="card bg-primary text-white text-center p-3">
+             <blockquote class="blockquote mb-0">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+               <footer class="blockquote-footer">
+                 <small>
+                   Someone famous in <cite title="Source Title">Source Title</cite>
+                 </small>
+               </footer>
+             </blockquote>
+           </div>
+           <div class="card text-center">
+             <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+             </div>
+           </div>
+           <div class="card">
+             <img class="card-img" src="..." alt="Card image">
+           </div>
+           <div class="card p-3 text-right">
+             <blockquote class="blockquote mb-0">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+               <footer class="blockquote-footer">
+                 <small class="text-muted">
+                   Someone famous in <cite title="Source Title">Source Title</cite>
+                 </small>
+               </footer>
+             </blockquote>
+           </div>
+           <div class="card">
+             <div class="card-body">
+               <h5 class="card-title">Card title</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+             </div>
+           </div>
+         </div>
+       </section>
+    </main>
+        
+
+     
+      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
